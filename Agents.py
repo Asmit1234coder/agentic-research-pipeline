@@ -12,13 +12,13 @@ llm=ChatMistralAI(model="mistral-small-2506")
 
 def search_agent():
     return create_agent(
-        llm=llm,
+        model=llm,
         tools=[search]
     )
 
 def write_agent():
     return create_agent(
-        llm=llm,
+        model=llm,
         tools=[scrape_url]
     )
 
